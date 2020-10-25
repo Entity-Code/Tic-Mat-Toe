@@ -16,12 +16,6 @@
       </div>
       <!-- credits -->
 
-
-
-
-
-
-
       <!-- total container start-->
       <div class="total-container">
          <header>
@@ -30,16 +24,14 @@
             <!-- title -->
 
             <!-- output msg TURN-->
-            <p><span id="msgTurn">Turno di X !</span></p>
+            <p><span id="msg">It's X's turn!</span></p>
             <!-- output msg TURN-->
 
-            <!-- output msg RESULT-->
-            <p><span id="msgResult">Complimenti, HAI VINTO !</span></p>
-            <!-- output msg RESULT-->
+            <!-- reset button-->
+            <p><span id="resetButton" onclick="resetGame()" disabled>Play Again</span></p>
+            <!-- reset button -->
+
          </header>
-
-
-
 
          <!-- a1 / b1 / c1
               a2 / b2 / c2
@@ -48,69 +40,65 @@
 
          <!-- BODY START -->
          <div class="body-container">
+             <!-- a -->
             <div class="col-1 flex-col">
                <!-- a1 -->
                <div class="box-container">
-                  <button id="a1" class="playButton">X</button>
+                  <button id="a1" class="playButton" onclick="play('a1')">X</button>
                </div>
 
                <!-- a2 -->
                <div class="box-container">
-                  <button id="a2" class="playButton">a2</button>
+                  <button id="a2" class="playButton" onclick="play('a2')">a2</button>
                </div>
 
                <!-- a3 -->
                <div class="box-container">
-                  <button id="a3" class="playButton">a3</button>
+                  <button id="a3" class="playButton" onclick="play('a3')">a3</button>
                </div>
 
             </div>
 
 
-
+            <!-- b -->
             <div class="col-2 flex-col">
                <!-- b1 -->
                <div class="box-container">
-                  <button id="b1" class="playButton">O</button>
+                  <button id="b1" class="playButton" onclick="play('b1')">O</button>
                </div>
 
                <!-- b2 -->
                <div class="box-container">
-                  <button id="b2" class="playButton">b2</button>
+                  <button id="b2" class="playButton" onclick="play('b2')">b2</button>
                </div>
 
                <!-- b3 -->
                <div class="box-container">
-                  <button id="b3" class="playButton">b3</button>
+                  <button id="b3" class="playButton" onclick="play('b3')">b3</button>
                </div>
             </div>
 
-
-
-
+            <!-- c -->
             <div class="col-3 flex-col">
                <!-- c1 -->
                <div class="box-container">
-                  <button id="c1" class="playButton">X</button>
+                  <button id="c1" class="playButton" onclick="play('c1')">X</button>
                </div>
 
                <!-- c2 -->
                <div class="box-container">
-                  <button id="c2" class="playButton">c2</button>
+                  <button id="c2" class="playButton" onclick="play('c2')">c2</button>
                </div>
 
                <!-- c3 -->
                <div class="box-container">
-                  <button id="c3" class="playButton">c3</button>
+                  <button id="c3" class="playButton" onclick="play('c3')">c3</button>
                </div>
             </div>
-
          </div>
          <!-- BODY END -->
       </div>
       <!-- total container end -->
-
-
 
       <!-- script link -->
       <script src="js/script.js" charset="utf-8"></script>
